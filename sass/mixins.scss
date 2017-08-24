@@ -1,0 +1,53 @@
+
+
+
+
+
+/* ------------------------------ *\
+ * Navigation
+\* ------------------------------ */
+
+%nav
+{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+%nav-hor
+{
+    @extend %nav;
+
+    overflow: hidden;
+
+    .menu-item
+    {
+        float: left;
+    }
+}
+
+%header-nav
+{
+    padding: 20px 0;
+
+    .menu-container
+    {
+        .menu
+        {
+            @extend %nav-hor;
+
+            display: block;
+
+            .menu-item
+            {
+                a
+                {
+                    color: $white;
+                    text-transform: uppercase;
+                    font-family: 'Titillium Web', sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

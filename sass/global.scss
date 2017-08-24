@@ -1,0 +1,90 @@
+
+
+
+
+
+html
+{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body
+{
+    font-size: 1rem;
+    background-color: $light-grey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1
+{
+    font-weight: bold;
+    font-size: 1.875rem; /* 30px */
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 1.5rem; /* 24px */
+}
+
+blockquote
+{
+    border-left: 2px solid $blue;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    p:not(:last-child)
+    {
+        font-size: 1.5rem; /* 24px */
+        font-style: italic;
+    }
+
+    p:last-child
+    {
+        margin-bottom: 0;
+        color: $medium-grey;
+    }
+}
+
+
+
+
+
+.content
+{
+    clear: both;
+}
+
+.content-white
+{
+    background-color: $white;
+    padding: 30px;
+}
+
+.content-blue
+{
+    background-color: $blue;
+    color: $white;
+    padding: 30px;
+}
+
+.sidebar .content-white
+{
+    &:not(:first-child)
+    {
+        margin-top: 30px;
+    }
+
+    @media ( max-width: 767px )
+    {
+        margin-top: 30px;
+    }
+}

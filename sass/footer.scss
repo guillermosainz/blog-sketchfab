@@ -1,0 +1,163 @@
+
+
+
+
+
+.page-footer
+{
+    margin-top: 80px;
+    font-size: 0.875rem; /* 14px */
+
+    .footer-nav,
+    .bottom-nav
+    {
+        @extend %nav-hor;
+    }
+
+    .footer-nav
+    {
+        margin-bottom: 10px;
+
+        .menu-item
+        {
+            &:not(:last-child)
+            {
+                margin-right: 10px;
+            }
+
+            a
+            {
+                font-weight: bold;
+                color: #555;
+            }
+        }
+
+        @media ( max-width: 767px )
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .menu-item:not(:last-child)
+            {
+                margin-right: 0;
+            }
+        }
+
+        @media ( max-width: 600px )
+        {
+            .menu-item
+            {
+                width: 25%;
+
+                &:nth-child(4) ~ .menu-item
+                {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        @media ( max-width: 400px )
+        {
+            .menu-item
+            {
+                width: 50%;
+
+                &:nth-child(2) ~ .menu-item
+                {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .bottom-nav
+    {
+        margin-bottom: 50px;
+        font-size: 0.75rem; /* 12px */
+
+        .menu-item
+        {
+            &:not(:first-child)
+            {
+                margin-left: 10px;
+            }
+
+            a
+            {
+                color: $medium-grey;
+            }
+        }
+
+        @media ( max-width: 767px )
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            .menu-item
+            {
+                &:not(:first-child)
+                {
+                    margin: 0;
+                }
+            }
+        }
+
+        @media ( max-width: 600px )
+        {
+            .menu-item
+            {
+                width: 33.33%;
+
+                &:nth-child(3) ~ .menu-item
+                {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        @media ( max-width: 400px )
+        {
+            .menu-item
+            {
+                width: 50%;
+
+                &:nth-child(2) ~ .menu-item
+                {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    .socials
+    {
+        float: right;
+        margin-top: -5px;
+
+        a
+        {
+            text-decoration: none;
+
+            &:not(:last-child)
+            {
+                margin-right: 5px;
+            }
+        }
+
+        .fa
+        {
+            font-size: 1.876rem; /* 30px */
+            color: #999;
+            transition: color .3s ease-out;
+
+            &:hover
+            {
+                color: $blue;
+            }
+        }
+    }
+
+}
